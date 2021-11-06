@@ -26,7 +26,8 @@ function Registration() {
     // console.log(userDetails);
     // await axios.post("http://localhost:4000/user-registe", userDetails).catch(Swal.fire({
     await axios
-      .post("http://localhost:4000/user-register", userDetails)
+      // .post("http://localhost:4000/user-register", userDetails)
+      .post("https://bms-backend-harshaks.herokuapp.com/user-register", userDetails)
       .then((data) => {
         console.log(data);
         Swal.fire({

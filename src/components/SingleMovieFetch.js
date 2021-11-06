@@ -13,7 +13,8 @@ function SingleMovie() {
 
   useEffect(async () => {
     try {
-      const response = await axios.get(`http://localhost:4000/movie/${movid}`);
+      // const response = await axios.get(`http://localhost:4000/movie/${movid}`);
+      const response = await axios.get(`https://bms-backend-harshaks.herokuapp.com/movie/${movid}`);
       console.log(response.data);
       setSingleData([response.data]);
     } catch (error) {

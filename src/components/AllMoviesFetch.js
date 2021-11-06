@@ -12,7 +12,8 @@ function AllMoviesFetch() {
 
     useEffect(async () => {
         try {
-            const response = await axios.get("http://localhost:4000/movies");
+            // const response = await axios.get("http://localhost:4000/movies");
+            const response = await axios.get("https://bms-backend-harshaks.herokuapp.com/movies");
             console.log(response.data);
             setData(response.data);
           } catch (error) {
